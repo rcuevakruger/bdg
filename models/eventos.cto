@@ -1,0 +1,28 @@
+namespace com.kruger.millas.eventos
+
+import com.kruger.millas.activos.*
+import com.kruger.millas.enums.*
+
+event AcreditaMillas {
+  --> Billetera billetera
+  o Long valor
+  o MotivoAcreditacion motivo
+  o String sistemaOrigen
+  o String productoOrigen
+}
+
+event CambioMillas {
+  --> Billetera billeteraOrigen
+  --> Billetera billeteraDestino
+  o Long valorTransaccion
+  o String objetoCambio
+  o String referenciaCambio
+  //o DateTime fechaEvento
+}
+
+event CobroMillas {
+  --> Billetera billetera  
+  o Long valorCobro
+  o String referencia
+  o MotivoCobro motivo
+}

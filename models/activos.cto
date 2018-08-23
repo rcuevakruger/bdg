@@ -1,0 +1,13 @@
+namespace com.kruger.millas.activos
+
+import com.kruger.millas.enums.*
+import com.kruger.millas.participantes.*
+
+/**
+Activo Principal Billetera, siempre tiene un dueño
+ */
+asset Billetera identified by idBilletera {
+  o String idBilletera
+  --> Propietario propietario
+  o Long valorActual
+}

@@ -1,0 +1,28 @@
+namespace com.kruger.millas.participantes
+
+import com.kruger.millas.enums.*
+
+/**
+Participante propietario de la billetera
+ */
+participant Propietario identified by id {
+  o String id
+  o TipoIdentificacion tipoIdentificacion
+  o String nombre
+  o EstadoParticipante estado
+}
+
+/**
+Representacion del Cliente
+ */
+participant Cliente extends Propietario {
+  o String tipo
+}
+
+participant Comercio extends Propietario {
+  o String tipo
+}
+
+participant Emisor extends Propietario {
+  o String tipo
+}

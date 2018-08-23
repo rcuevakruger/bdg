@@ -1,0 +1,40 @@
+namespace com.kruger.millas.transacciones
+
+/**
+Transacciones soportadas en el block
+ */
+
+import com.kruger.millas.enums.*
+import com.kruger.millas.activos.*
+
+/**
+Transaccion que acredita millas
+ */
+transaction AcreditarMillas {
+  --> Billetera billetera
+  o Long valor
+  o MotivoAcreditacion motivo
+  o String sistemaOrigen
+  o String productoOrigen
+}
+
+/**
+Transaccion que intercambia millas entre clientes y comercio
+ */
+transaction CambiarMillas {
+  --> Billetera billeteraOrigen
+  --> Billetera billeteraDestino
+  o Long valorTransaccion  
+  o String objetoCambio
+  o String referenciaCambio
+}
+
+/**
+Transaccion que cobra las millas entre el comercio y el emisor
+ */
+transaction CobrarMillas {
+  --> Billetera billetera
+  o Long valorCobro
+  o String referencia
+  o MotivoCobro motivo
+}

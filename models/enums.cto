@@ -1,0 +1,36 @@
+namespace com.kruger.millas.enums
+
+/**
+ Posibles motivos de acreditación de millas
+ */
+enum MotivoAcreditacion {
+  o INICIALIZACION
+  o REVERSO
+  o TRANSACCION
+}
+
+/**
+ Posibles motivos de cobro de millas
+ */
+enum MotivoCobro {
+  o INICIALIZACION
+  o REVERSO
+  o TRANSACCION
+}
+
+/**
+Estados de los participantes
+ */
+enum EstadoParticipante {
+  o ACTIVO
+  o INACTIVO
+}
+
+/**
+Tipo de identificacion del participante
+ */
+enum TipoIdentificacion{
+  o CEDULA
+  o RUC
+  o PASAPORTE
+}
