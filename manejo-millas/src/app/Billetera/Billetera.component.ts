@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-billetera',
   templateUrl: './Billetera.component.html',
-  styleUrls: ['./Billetera.component.css'],
+  styleUrls: ['./Billetera.component.scss'],
   providers: [BilleteraService]
 })
 export class BilleteraComponent implements OnInit {

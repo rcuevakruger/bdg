@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-emisor',
   templateUrl: './Emisor.component.html',
-  styleUrls: ['./Emisor.component.css'],
+  styleUrls: ['./Emisor.component.scss'],
   providers: [EmisorService]
 })
 export class EmisorComponent implements OnInit {

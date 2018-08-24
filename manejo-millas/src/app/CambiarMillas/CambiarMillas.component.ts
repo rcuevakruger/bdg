@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-cambiarmillas',
   templateUrl: './CambiarMillas.component.html',
-  styleUrls: ['./CambiarMillas.component.css'],
+  styleUrls: ['./CambiarMillas.component.scss'],
   providers: [CambiarMillasService]
 })
 export class CambiarMillasComponent implements OnInit {
