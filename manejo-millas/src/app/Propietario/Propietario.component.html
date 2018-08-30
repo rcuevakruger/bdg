@@ -291,13 +291,13 @@
           <tr *ngFor="let participant of allParticipants">
 
 
-            <td class="participant-properties">{{participant.ID}}</td>
+            <td class="participant-properties">{{participant.id}}</td>
 
-            <td class="participant-properties">{{participant.TipoIDentificacion}}</td>
+            <td class="participant-properties">{{participant.tipoIdentificacion}}</td>
 
-            <td class="participant-properties">{{participant.Nombre}}</td>
+            <td class="participant-properties">{{participant.nombre}}</td>
 
-            <td class="participant-properties">{{participant.Estado}}</td>
+            <td class="participant-properties">{{participant.estado}}</td>
 
             <td>
               <button (click)="getForm(participant.ID);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateParticipantModal">
