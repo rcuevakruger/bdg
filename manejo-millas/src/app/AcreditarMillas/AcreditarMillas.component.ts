@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-acreditarmillas',
   templateUrl: './AcreditarMillas.component.html',
-  styleUrls: ['./AcreditarMillas.component.css'],
+  styleUrls: ['./AcreditarMillas.component.scss'],
   providers: [AcreditarMillasService]
 })
 export class AcreditarMillasComponent implements OnInit {

@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-cliente',
   templateUrl: './Cliente.component.html',
-  styleUrls: ['./Cliente.component.css'],
+  styleUrls: ['./Cliente.component.scss'],
   providers: [ClienteService]
 })
 export class ClienteComponent implements OnInit {

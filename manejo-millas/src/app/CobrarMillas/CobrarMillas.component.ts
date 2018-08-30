@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-cobrarmillas',
   templateUrl: './CobrarMillas.component.html',
-  styleUrls: ['./CobrarMillas.component.css'],
+  styleUrls: ['./CobrarMillas.component.scss'],
   providers: [CobrarMillasService]
 })
 export class CobrarMillasComponent implements OnInit {

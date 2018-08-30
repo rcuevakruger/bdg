@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-comercio',
   templateUrl: './Comercio.component.html',
-  styleUrls: ['./Comercio.component.css'],
+  styleUrls: ['./Comercio.component.scss'],
   providers: [ComercioService]
 })
 export class ComercioComponent implements OnInit {

@@ -20,7 +20,7 @@ import 'rxjs/add/operator/toPromise';
 @Component({
   selector: 'app-propietario',
   templateUrl: './Propietario.component.html',
-  styleUrls: ['./Propietario.component.css'],
+  styleUrls: ['./Propietario.component.scss'],
   providers: [PropietarioService]
 })
 export class PropietarioComponent implements OnInit {
