@@ -16,37 +16,37 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hIDden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" ID="addParticipantModalLabel">Crear Participante</h4>
+        <h4 class="modal-title" id="addParticipantModalLabel">Crear Participante</h4>
         <p class="modal-intro">Llenar el siguiente formulario</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
 
           <div class="form-group text-left">
-            <label for="ID">ID</label>
+            <label for="id">ID</label>
 
-            <input formControlName="ID" type="text" class="form-control">
+            <input formControlName="id" type="text" class="form-control">
 
           </div>
 
 
 
 
-          <label for="TipoIDentificacion">Selecciones Tipo de IDentificacion</label>
+          <label for="TipoIdentificacion">Selecciones Tipo de Identificacion</label>
           <div class="checkbox">
 
             <label>
-              <input formControlName="TipoIDentificacion" name="TipoIDentificacion" value="CEDULA" type="radio" /> CEDULA
+              <input formControlName="TipoIdentificacion" name="TipoIdentificacion" value="CEDULA" type="radio" /> CEDULA
             </label>
 
             <label>
-              <input formControlName="TipoIDentificacion" name="TipoIDentificacion" value="RUC" type="radio" /> RUC
+              <input formControlName="TipoIdentificacion" name="TipoIdentificacion" value="RUC" type="radio" /> RUC
             </label>
 
             <label>
-              <input formControlName="TipoIDentificacion" name="TipoIDentificacion" value="PASAPORTE" type="radio" /> PASAPORTE
+              <input formControlName="TipoIdentificacion" name="TipoIdentificacion" value="PASAPORTE" type="radio" /> PASAPORTE
             </label>
 
           </div>
@@ -59,33 +59,6 @@
 
             <input formControlName="Nombre" type="text" class="form-control">
           </div>
-          <script> 
-            function valIDarForm() {
-              var verificar = true;
-              var expRegNombre = /^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-              if (!Nombre.value) {
-                alert("El campo Nombre es requerIDo");
-                Nombre.focus();
-                verificar == false;
-              }
-              else if (!expRegNombre.exec(Nombre.value)) {
-                alert("El campo Nombre admite letras y espacios.")
-                Nombre.focus();
-                verificar = false;
-
-              }
-              if (verificar) {
-                alert("Se ha enviado el formulario");
-                document.myform.submit();
-              }
-            }
-            window.onload = function () {
-              var Confirmar;
-              Confirmar = document.contacto_frm.enviar_btn;
-              botonEnviar.onclick = valIDarForm;
-            }
-          </script>
-
 
 
           <label for="Estado">Estado</label>
@@ -117,14 +90,14 @@
 
 
 
-<div class="modal fade" ID="updateParticipantModal" tabindex="-1" role="dialog" aria-labelledby="updateParticipantModalLabel">
+<div class="modal fade" id="updateParticipantModal" tabindex="-1" role="dialog" aria-labelledby="updateParticipantModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hIDden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" ID="updateParticipantModalLabel">Update Participant</h4>
+        <h4 class="modal-title" id="updateParticipantModalLabel">Update Participant</h4>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -132,16 +105,16 @@
 
 
           <div class="form-group text-left">
-            <label for="ID">ID</label>
+            <label for="id">ID</label>
 
 
-            <input [ngModel]="ID" formControlName="ID" class="form-control" disabled="disabled">
+            <input [ngModel]="id" formControlName="id" class="form-control" disabled="disabled">
 
 
           </div>
 
           <div class="form-group text-left">
-            <label for="TipoIDentificacion">TipoIDentificacion</label>
+            <label for="TipoIdentificacion">TipoIdentificacion</label>
 
 
 
@@ -149,17 +122,17 @@
               <div class="col-xs-12 checkbox">
 
                 <label>
-                  <input formControlName="TipoIDentificacion" [ngModel]="TipoIDentificacion" name="TipoIDentificacion" value="CEDULA" type="radio"
+                  <input formControlName="TipoIdentificacion" [ngModel]="TipoIdentificacion" name="TipoIdentificacion" value="CEDULA" type="radio"
                   /> CEDULA
                 </label>
 
                 <label>
-                  <input formControlName="TipoIDentificacion" [ngModel]="TipoIDentificacion" name="TipoIDentificacion" value="RUC" type="radio"
+                  <input formControlName="TipoIdentificacion" [ngModel]="TipoIdentificacion" name="TipoIdentificacion" value="RUC" type="radio"
                   /> RUC
                 </label>
 
                 <label>
-                  <input formControlName="TipoIDentificacion" [ngModel]="TipoIDentificacion" name="TipoIDentificacion" value="PASAPORTE" type="radio"
+                  <input formControlName="TipoIdentificacion" [ngModel]="TipoIdentificacion" name="TipoIdentificacion" value="PASAPORTE" type="radio"
                   /> PASAPORTE
                 </label>
 
@@ -216,14 +189,14 @@
 
 
 
-<div class="modal fade" ID="deleteParticipantModal" tabindex="-1" role="dialog" aria-labelledby="deleteParticipantModalLabel">
+<div class="modal fade" id="deleteParticipantModal" tabindex="-1" role="dialog" aria-labelledby="deleteParticipantModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hIDden="true">&times;</span>
+          <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="modal-title" ID="deleteParticipantModalLabel">Delete Participant</h4>
+        <h4 class="modal-title" id="deleteParticipantModalLabel">Delete Participant</h4>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -255,12 +228,12 @@
 
   <div class="row">
     <div class="col-md-9">
-      <h1 class="participant-title" ID='participantName'>Propietario</h1>
+      <h1 class="participant-title" id='participantName'>Propietario</h1>
     </div>
     <div class="col-md-3">
       <button (click)="resetForm()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addParticipantModal">
-        <span style="font-size: 14px;font-family: inherit;border-right:1px solID rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:mIDdle;">
-          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" wIDth="10" height="10" viewBox="0 0 10 10">
+        <span style="font-size: 14px;font-family: inherit;border-right:1px solid rgba(255,255,255,0.5);padding-right:0.6em;margin-right:0.5em;vertical-align:mIDdle;">
+          <svg class="plus-svg" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
             <path fill-rule="evenodd" d="M5.5,4.5 L9.5,4.5 L10,4.5 L10,5.5 L9.5,5.5 L5.5,5.5 L5.5,9.5 L5.5,10 L4.5,10 L4.5,9.5 L4.5,5.5 L0.5,5.5 L0,5.5 L0,4.5 L0.5,4.5 L4.5,4.5 L4.5,0.5 L4.5,0 L5.5,0 L5.5,0.5 L5.5,4.5 Z"
             />
           </svg>
@@ -278,7 +251,7 @@
 
             <th class="info">ID</th>
 
-            <th class="info">TipoIDentificacion</th>
+            <th class="info">TipoIdentificacion</th>
 
             <th class="info">Nombre</th>
 
@@ -300,9 +273,9 @@
             <td class="participant-properties">{{participant.estado}}</td>
 
             <td>
-              <button (click)="getForm(participant.ID);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateParticipantModal">
-                <svg version="1.1" ID="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  wIDth="12.8px" height="12.8px" viewBox="0 0 30.7 30.7" style="enable-background:new 0 0 30.7 30.7;" xml:space="preserve">
+              <button (click)="getForm(participant.id);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateParticipantModal">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="12.8px" height="12.8px" viewBox="0 0 30.7 30.7" style="enable-background:new 0 0 30.7 30.7;" xml:space="preserve">
                   <g>
                     <path d="M1.5,30.7c0.1,0,0.2,0,0.4,0l5.9-1.5c0.8-0.2,1.3-1,1.1-1.8c-0.2-0.8-1-1.3-1.8-1.1l-3.6,0.9l0.8-3.8
                      c0.2-0.8-0.4-1.6-1.2-1.8c-0.8-0.2-1.6,0.4-1.8,1.2L0,28.9c-0.1,0.5,0.1,1,0.4,1.4C0.7,30.6,1.1,30.7,1.5,30.7z"
@@ -314,9 +287,9 @@
                 </svg>
               </button>
 
-              <button (click)="setID(participant.ID);" type="button" class="btn btn-delete" data-toggle="modal" data-target="#deleteParticipantModal">
-                <svg version="1.1" ID="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  wIDth="13.8px" height="16px" viewBox="0 0 65.9 76.2" style="enable-background:new 0 0 65.9 76.2;" xml:space="preserve">
+              <button (click)="setId(participant.id);" type="button" class="btn btn-delete" data-toggle="modal" data-target="#deleteParticipantModal">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="13.8px" height="16px" viewBox="0 0 65.9 76.2" style="enable-background:new 0 0 65.9 76.2;" xml:space="preserve">
                   <path d="M42.8,60.2V22.6c0-1.7-1.3-3-3-3s-3,1.3-3,3v37.6c0,1.7,1.3,3,3,3S42.8,61.9,42.8,60.2z M29.1,60.2V22.6c0-1.7-1.3-3-3-3
                    s-3,1.3-3,3v37.6c0,1.7,1.3,3,3,3S29.1,61.9,29.1,60.2z M56.2,19.6c-1.7,0-3,1.3-3,3V68c0,1.2-1,2.2-2.2,2.2H14.9
                    c-1.2,0-2.2-1-2.2-2.2V22.6c0-1.7-1.3-3-3-3s-3,1.3-3,3V68c0,4.5,3.7,8.2,8.2,8.2H51c4.5,0,8.2-3.7,8.2-8.2V22.6
