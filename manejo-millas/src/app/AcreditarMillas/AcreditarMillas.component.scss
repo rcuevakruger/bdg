@@ -56,12 +56,12 @@
 
 }
 .modal-header{
-    background: #F4F4F4;
+    background: rgb(215, 227, 241);
     border-radius: 5px;
     border-bottom: 1px solid #F4F4F4;
 }
 .modal-body{
-    background: #F4F4F4;
+    background: rgb(242, 244, 245);
     border-radius: 5px;
 }
 .modal-footer{
@@ -180,6 +180,9 @@ label {
     float: right;
     margin: 32px;
 }
+.form-group{
+    
+}
 
 /***.transaction-properties:hover, .transaction-properties:hover span{  
 overflow: visible;
@@ -296,13 +299,12 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'Nombre:'; }
-       &:nth-child(3):before { content: 'Primer Apellido:'; }
-       &:nth-child(4):before { content: 'Segundo Apellido:'; }
-       &:nth-child(5):before { content: 'Email:'; }
-       &:nth-child(6):before { content: 'Direccion:'; }
-       &:nth-child(7):before { content: 'Balance:'; }
-       &:nth-child(8):before { content: ''; }
+       &:nth-child(2):before { content: 'Billetera:'; }
+       &:nth-child(3):before { content: 'Valor:'; }
+       &:nth-child(4):before { content: 'Motivo:'; }
+       &:nth-child(5):before { content: 'SistemaOrigen:'; }
+       &:nth-child(6):before { content: 'ProductoOrigen:'; }
+       &:nth-child(7):before { content: ''; }
     }
     
     tr {

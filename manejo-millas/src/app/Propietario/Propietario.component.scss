@@ -55,12 +55,12 @@
 
 }
 .modal-header{
-    background: #F4F4F4;
+    background: rgb(215, 227, 241);
     border-radius: 5px;
     border-bottom: 1px solid #F4F4F4;
 }
 .modal-body{
-    background: #F4F4F4;
+    background: rgb(242, 244, 245);
     border-radius: 5px;
 }
 .modal-footer{
@@ -255,6 +255,7 @@ table {
           position: relative;
           text-align: left;
  
+          
           &:before {
              color: lighten(#398B93, 30%);
              content: '';

@@ -11,6 +11,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-body {
-    background-color: red;
+ body {
+    background-color: rgb(165, 224, 241);
+}
+.centrar
+{
+     position: absolute; 
+    top: 0; right: 0; 
+    bottom: 0; left: 0;
+    margin: auto; 
+    padding-top: -50%; 
+}
+
+.container{
+    display: grid;
+    margin-left: 15px;
+    padding-left: 0px;
+    color: rgb(10, 75, 150);
+}
+.img {
+    width: 100%;
+    height: auto;
 }

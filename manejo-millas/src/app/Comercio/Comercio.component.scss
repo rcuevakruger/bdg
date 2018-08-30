@@ -55,12 +55,12 @@
 
 }
 .modal-header{
-    background: #F4F4F4;
+    background: rgb(215, 227, 241);
     border-radius: 5px;
     border-bottom: 1px solid #F4F4F4;
 }
 .modal-body{
-    background: #F4F4F4;
+    background: rgb(242, 244, 245);
     border-radius: 5px;
 }
 .modal-footer{
@@ -88,9 +88,9 @@ label {
 
 }
 .btn-default {
-    color: #844EF4;
+    color: #426ca3;
     background-color: #ffffff;
-    border-color: #844EF4;
+    border-color: #426ca3;
     border-radius: 4px;
     width: 76px;
     height: 40px;
@@ -263,12 +263,12 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'Nombre:'; }
-       &:nth-child(3):before { content: 'Primer Apellido:'; }
-       &:nth-child(4):before { content: 'Segundo Apellido:'; }
-       &:nth-child(5):before { content: 'Email:'; }
-       &:nth-child(6):before { content: 'Direccion:'; }
-       &:nth-child(7):before { content: 'Balance:'; }
+       &:nth-child(2):before { content: 'Tipo:'; }
+       &:nth-child(3):before { content: 'ID:'; }
+       &:nth-child(4):before { content: 'TipoIDentificacion:'; }
+       &:nth-child(5):before { content: 'Nombre:'; }
+       &:nth-child(6):before { content: 'Estado:'; }
+       &:nth-child(7):before { content: 'Acciones:'; }
        &:nth-child(8):before { content: ''; }
     }
     

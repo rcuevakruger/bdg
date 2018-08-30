@@ -11,6 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 .container {
     width: 100%;
     padding-left: 72px;
@@ -55,16 +56,16 @@
 
 }
 .modal-header{
-    background: #F4F4F4;
+    background: rgb(215, 227, 241);
     border-radius: 5px;
     border-bottom: 1px solid #F4F4F4;
 }
 .modal-body{
-    background: #F4F4F4;
+    background: rgb(242, 244, 245);
     border-radius: 5px;
 }
 .modal-footer{
-    background: #F4F4F4;
+    background: rgb(250, 243, 243);
     border-radius: 5px;
     border-top: 1px solid #f4f4f4
 }
@@ -220,7 +221,7 @@ table {
        &:last-child {
           font-size: 0.95em;
           line-height: 1.4;
-          text-align: right;
+          text-align: left;
        }
     }
     
@@ -275,8 +276,10 @@ table {
           }
        }
  
-       &:nth-child(2):before { content: 'Email:'; }
-       &:nth-child(3):before { content: 'Telefono:'; }
+       &:nth-child(2):before { content: 'IdBilletera:'; }
+       &:nth-child(3):before { content: 'Propietario:'; }
+       &:nth-child(2):before { content: 'ValorActual:'; }
+       &:nth-child(3):before { content: 'Acciones:'; }
     }
     
     tr {

@@ -17,7 +17,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="addTransactionModalLabel">Crear Transaccion</h4>
-          <p class="modal-intro">Enter the required values below.</p>
+          <p class="modal-intro">Llenar el siguiente formulario.</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -27,19 +27,9 @@
 
             
               <div class="form-group text-left">
-                <label for="billeteraOrigen">billeteraOrigen</label>
+                <label for="BilleteraOrigen">BilleteraOrigen</label>
                 
-                    <textarea formControlName="billeteraOrigen" class="form-control" rows="3"></textarea>
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="billeteraDestino">billeteraDestino</label>
-                
-                    <textarea formControlName="billeteraDestino" class="form-control" rows="3"></textarea>
+                    <textarea formControlName="BilleteraOrigen" class="form-control" rows="3"></textarea>
                 
               </div>
             
@@ -47,19 +37,9 @@
 
             
               <div class="form-group text-left">
-                <label for="valorTransaccion">valorTransaccion</label>
+                <label for="BilleteraDestino">BilleteraDestino</label>
                 
-                  <input formControlName="valorTransaccion" type="number" class="form-control">
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="objetoCambio">objetoCambio</label>
-                
-                  <input formControlName="objetoCambio" type="text" class="form-control">
+                    <textarea formControlName="BilleteraDestino" class="form-control" rows="3"></textarea>
                 
               </div>
             
@@ -67,9 +47,29 @@
 
             
               <div class="form-group text-left">
-                <label for="referenciaCambio">referenciaCambio</label>
+                <label for="ValorTransaccion">ValorTransaccion</label>
                 
-                  <input formControlName="referenciaCambio" type="text" class="form-control">
+                  <input formControlName="ValorTransaccion" type="number" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="ObjetoCambio">ObjetoCambio</label>
+                
+                  <input formControlName="ObjetoCambio" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <div class="form-group text-left">
+                <label for="ReferenciaCambio">ReferenciaCambio</label>
+                
+                  <input formControlName="ReferenciaCambio" type="text" class="form-control">
                 
               </div>
             
@@ -107,50 +107,50 @@
 
           
             <div class="form-group text-left">
-              <label for="billeteraOrigen">billeteraOrigen</label>
+              <label for="BilleteraOrigen">BilleteraOrigen</label>
 
               
                 
-                  <textarea [ngModel]="billeteraOrigen" formControlName="billeteraOrigen" class="form-control" rows="3"></textarea>
-                
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="billeteraDestino">billeteraDestino</label>
-
-              
-                
-                  <textarea [ngModel]="billeteraDestino" formControlName="billeteraDestino" class="form-control" rows="3"></textarea>
+                  <textarea [ngModel]="BilleteraOrigen" formControlName="BilleteraOrigen" class="form-control" rows="3"></textarea>
                 
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="valorTransaccion">valorTransaccion</label>
+              <label for="BilleteraDestino">BilleteraDestino</label>
 
               
-                <input [ngModel]="valorTransaccion" formControlName="valorTransaccion" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="objetoCambio">objetoCambio</label>
-
-              
-                <input [ngModel]="objetoCambio"formControlName="objetoCambio" type="text" class="form-control">
+                
+                  <textarea [ngModel]="BilleteraDestino" formControlName="BilleteraDestino" class="form-control" rows="3"></textarea>
+                
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="referenciaCambio">referenciaCambio</label>
+              <label for="ValorTransaccion">ValorTransaccion</label>
 
               
-                <input [ngModel]="referenciaCambio"formControlName="referenciaCambio" type="text" class="form-control">
+                <input [ngModel]="ValorTransaccion" formControlName="ValorTransaccion" type="number" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="ObjetoCambio">ObjetoCambio</label>
+
+              
+                <input [ngModel]="ObjetoCambio"formControlName="ObjetoCambio" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="ReferenciaCambio">ReferenciaCambio</label>
+
+              
+                <input [ngModel]="ReferenciaCambio"formControlName="ReferenciaCambio" type="text" class="form-control">
               
 
             </div>
@@ -239,27 +239,27 @@
             
 
               
-                <li><span class="attribute"><b>billeteraOrigen</b></span></li>
+                <li><span class="attribute"><b>BilleteraOrigen</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>billeteraDestino</b></span></li>
+                <li><span class="attribute"><b>BilleteraDestino</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>valorTransaccion</b></span></li>
+                <li><span class="attribute"><b>ValorTransaccion</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>objetoCambio</b></span></li>
+                <li><span class="attribute"><b>ObjetoCambio</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>referenciaCambio</b></span></li>
+                <li><span class="attribute"><b>ReferenciaCambio</b></span></li>
               
             
 

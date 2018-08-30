@@ -14,6 +14,8 @@
 
 import { Component, AfterViewInit } from '@angular/core';
 import $ from 'jquery';
+import {OnInit} from '@angular/core';
+import {Validators,FormControl,FormGroup,FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +25,8 @@ import $ from 'jquery';
 export class AppComponent implements AfterViewInit {
   title = 'app works!';
 
+
+  
   ngAfterViewInit() {
     $('.nav a').on('click', function(){
       $('.nav').find('.active').removeClass('active');

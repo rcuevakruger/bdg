@@ -11,50 +11,49 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
 <div class="modal fade" id="addTransactionModal" tabindex="-1" role="dialog" aria-labelledby="addTransactionModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addTransactionModalLabel">Crear Transaccion</h4>
-          <p class="modal-intro">Enter the required values below.</p>
+        <h4 class="modal-title center" id="addTransactionModalLabel">Crear Transaccion</h4>
+          <p class="modal-intro">Llenar el siguiente formulario</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
 
 
-          
-
-            
               <div class="form-group text-left">
-                <label for="billetera">billetera</label>
-                
-                    <textarea formControlName="billetera" class="form-control" rows="3"></textarea>
+                <label for="Billetera">Billetera: </label> <textarea formControlName="Billetera" class="form-control" rows="2"></textarea>
                 
               </div>
-            
-          
-
-            
+   
               <div class="form-group text-left">
-                <label for="valor">valor</label>
+                <label for="Valor">Valor:</label>
                 
-                  <input formControlName="valor" type="number" class="form-control">
+                  <input formControlName="Valor" type="number" class="form-control">
                 
               </div>
-            
-          
+            <!--Ingreso del nuevo boton-->
+             
+            <!-- Fin-->  
 
-            
-              <label for="motivo">motivo</label>
+
+
+              <label for="Motivo">Motivo:</label>
               <div class="checkbox">
                 
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="INICIALIZACION"
                       type="radio"
                       
@@ -65,9 +64,9 @@
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="REVERSO"
                       type="radio"
                       
@@ -78,9 +77,9 @@
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="TRANSACCION"
                       type="radio"
                       
@@ -94,9 +93,9 @@
 
             
               <div class="form-group text-left">
-                <label for="sistemaOrigen">sistemaOrigen</label>
+                <label for="SistemaOrigen">SistemaOrigen</label>
                 
-                  <input formControlName="sistemaOrigen" type="text" class="form-control">
+                  <input formControlName="SistemaOrigen" type="text" class="form-control">
                 
               </div>
             
@@ -104,9 +103,9 @@
 
             
               <div class="form-group text-left">
-                <label for="productoOrigen">productoOrigen</label>
+                <label for="ProductoOrigen">ProductoOrigen</label>
                 
-                  <input formControlName="productoOrigen" type="text" class="form-control">
+                  <input formControlName="ProductoOrigen" type="text" class="form-control">
                 
               </div>
             
@@ -144,27 +143,27 @@
 
           
             <div class="form-group text-left">
-              <label for="billetera">billetera</label>
+              <label for="Billetera">Billetera</label>
 
               
                 
-                  <textarea [ngModel]="billetera" formControlName="billetera" class="form-control" rows="3"></textarea>
+                  <textarea [ngModel]="Billetera" formControlName="Billetera" class="form-control" rows="3"></textarea>
                 
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="valor">valor</label>
+              <label for="Valor">Valor</label>
 
               
-                <input [ngModel]="valor" formControlName="valor" type="number" class="form-control">
+                <input [ngModel]="Valor" formControlName="Valor" type="number" class="form-control">
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="motivo">motivo</label>
+              <label for="Motivo">Motivo</label>
 
               
                 
@@ -174,10 +173,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="INICIALIZACION"
                           type="radio"
                           
@@ -188,10 +187,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="REVERSO"
                           type="radio"
                           
@@ -202,10 +201,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="TRANSACCION"
                           type="radio"
                           
@@ -221,19 +220,19 @@
             </div>
           
             <div class="form-group text-left">
-              <label for="sistemaOrigen">sistemaOrigen</label>
+              <label for="SistemaOrigen">SistemaOrigen</label>
 
               
-                <input [ngModel]="sistemaOrigen"formControlName="sistemaOrigen" type="text" class="form-control">
+                <input [ngModel]="SistemaOrigen"formControlName="SistemaOrigen" type="text" class="form-control">
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="productoOrigen">productoOrigen</label>
+              <label for="ProductoOrigen">ProductoOrigen</label>
 
               
-                <input [ngModel]="productoOrigen"formControlName="productoOrigen" type="text" class="form-control">
+                <input [ngModel]="ProductoOrigen"formControlName="ProductoOrigen" type="text" class="form-control">
               
 
             </div>
@@ -305,34 +304,19 @@
           <ul>
             
 
+                <li><span class="attribute"><b>Billetera</b></span></li>
+ 
+                <li><span class="attribute"><b>Valor</b></span></li>
               
-                <li><span class="attribute"><b>billetera</b></span></li>
-              
-            
 
+                <li><span class="attribute"><b>Motivo</b></span></li>
               
-                <li><span class="attribute"><b>valor</b></span></li>
               
-            
+                <li><span class="attribute"><b>SistemaOrigen</b></span></li>
+              
 
-              
-                <li><span class="attribute"><b>motivo</b></span></li>
-              
-            
+                <li><span class="attribute"><b>ProductoOrigen</b></span></li>
 
-              
-                <li><span class="attribute"><b>sistemaOrigen</b></span></li>
-              
-            
-
-              
-                <li><span class="attribute"><b>productoOrigen</b></span></li>
-              
-            
-
-           
-              
-            
           </ul>
         </div>
       </div>
@@ -341,4 +325,5 @@
     </div>
   </div>
 </div>
+</html>>
  

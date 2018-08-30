@@ -16,8 +16,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="addTransactionModalLabel">Create Transaction</h4>
-          <p class="modal-intro">Enter the required values below.</p>
+        <h4 class="modal-title" id="addTransactionModalLabel">Crear Transacciones</h4>
+          <p class="modal-intro">Llenar el siguiente formulario.</p>
       </div>
       <form [formGroup]="myForm">
         <div class="modal-body">
@@ -27,19 +27,9 @@
 
             
               <div class="form-group text-left">
-                <label for="billetera">billetera</label>
+                <label for="Billetera">Billetera</label>
                 
-                    <textarea formControlName="billetera" class="form-control" rows="3"></textarea>
-                
-              </div>
-            
-          
-
-            
-              <div class="form-group text-left">
-                <label for="valorCobro">valorCobro</label>
-                
-                  <input formControlName="valorCobro" type="number" class="form-control">
+                    <textarea formControlName="Billetera" class="form-control" rows="3"></textarea>
                 
               </div>
             
@@ -47,24 +37,34 @@
 
             
               <div class="form-group text-left">
-                <label for="referencia">referencia</label>
+                <label for="ValorCobro">ValorCobro</label>
                 
-                  <input formControlName="referencia" type="text" class="form-control">
+                  <input formControlName="ValorCobro" type="number" class="form-control">
                 
               </div>
             
           
 
             
-              <label for="motivo">motivo</label>
+              <div class="form-group text-left">
+                <label for="Referencia">Referencia</label>
+                
+                  <input formControlName="Referencia" type="text" class="form-control">
+                
+              </div>
+            
+          
+
+            
+              <label for="Motivo">Motivo</label>
               <div class="checkbox">
                 
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="INICIALIZACION"
                       type="radio"
                       
@@ -75,9 +75,9 @@
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="REVERSO"
                       type="radio"
                       
@@ -88,9 +88,9 @@
                   <label>
                     <input
                       
-                        formControlName="motivo"
+                        formControlName="Motivo"
                       
-                      name="motivo"
+                      name="Motivo"
                       value="TRANSACCION"
                       type="radio"
                       
@@ -134,36 +134,36 @@
 
           
             <div class="form-group text-left">
-              <label for="billetera">billetera</label>
+              <label for="Billetera">Billetera</label>
 
               
                 
-                  <textarea [ngModel]="billetera" formControlName="billetera" class="form-control" rows="3"></textarea>
+                  <textarea [ngModel]="Billetera" formControlName="Billetera" class="form-control" rows="3"></textarea>
                 
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="valorCobro">valorCobro</label>
+              <label for="ValorCobro">ValorCobro</label>
 
               
-                <input [ngModel]="valorCobro" formControlName="valorCobro" type="number" class="form-control">
-              
-
-            </div>
-          
-            <div class="form-group text-left">
-              <label for="referencia">referencia</label>
-
-              
-                <input [ngModel]="referencia"formControlName="referencia" type="text" class="form-control">
+                <input [ngModel]="ValorCobro" formControlName="ValorCobro" type="number" class="form-control">
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="motivo">motivo</label>
+              <label for="Referencia">Referencia</label>
+
+              
+                <input [ngModel]="Referencia"formControlName="Referencia" type="text" class="form-control">
+              
+
+            </div>
+          
+            <div class="form-group text-left">
+              <label for="Motivo">Motivo</label>
 
               
                 
@@ -173,10 +173,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="INICIALIZACION"
                           type="radio"
                           
@@ -187,10 +187,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="REVERSO"
                           type="radio"
                           
@@ -201,10 +201,10 @@
                       <label>
                         <input
                           
-                            formControlName="motivo"
-                            [ngModel]="motivo"
+                            formControlName="Motivo"
+                            [ngModel]="Motivo"
                           
-                          name="motivo"
+                          name="Motivo"
                           value="TRANSACCION"
                           type="radio"
                           
@@ -286,22 +286,22 @@
             
 
               
-                <li><span class="attribute"><b>billetera</b></span></li>
+                <li><span class="attribute"><b>Billetera</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>valorCobro</b></span></li>
+                <li><span class="attribute"><b>ValorCobro</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>referencia</b></span></li>
+                <li><span class="attribute"><b>Referencia</b></span></li>
               
             
 
               
-                <li><span class="attribute"><b>motivo</b></span></li>
+                <li><span class="attribute"><b>Motivo</b></span></li>
               
             
 

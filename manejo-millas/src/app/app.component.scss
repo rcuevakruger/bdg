@@ -178,7 +178,9 @@
     max-height: 200px;
     overflow-x: hidden;
 }
-
+.router-outlet{
+    background-color: rgb(232, 231, 233);
+}
 .dropdown-toggle {
     border-radius: 25px 25px 0px 0px;    
 }
