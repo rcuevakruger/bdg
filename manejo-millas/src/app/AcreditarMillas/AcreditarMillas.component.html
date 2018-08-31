@@ -12,7 +12,6 @@
  limitations under the License.
 -->
 <!doctype html>
-<html>
     <head>
         <meta charset="utf-8">
     </head>
@@ -29,14 +28,14 @@
 
 
               <div class="form-group text-left">
-                <label for="Billetera">Billetera: </label> <textarea formControlName="Billetera" class="form-control" rows="2"></textarea>
+                <label for="billetera">billetera: </label> <textarea formControlName="billetera" class="form-control" rows="2"></textarea>
                 
               </div>
    
               <div class="form-group text-left">
-                <label for="Valor">Valor:</label>
+                <label for="valor">valor:</label>
                 
-                  <input formControlName="Valor" type="number" class="form-control">
+                  <input formControlName="valor" type="number" class="form-control">
                 
               </div>
             <!--Ingreso del nuevo boton-->
@@ -45,15 +44,15 @@
 
 
 
-              <label for="Motivo">Motivo:</label>
+              <label for="motivo">motivo:</label>
               <div class="checkbox">
                 
                   <label>
                     <input
                       
-                        formControlName="Motivo"
+                        formControlName="motivo"
                       
-                      name="Motivo"
+                      name="motivo"
                       value="INICIALIZACION"
                       type="radio"
                       
@@ -64,9 +63,9 @@
                   <label>
                     <input
                       
-                        formControlName="Motivo"
+                        formControlName="motivo"
                       
-                      name="Motivo"
+                      name="motivo"
                       value="REVERSO"
                       type="radio"
                       
@@ -77,9 +76,9 @@
                   <label>
                     <input
                       
-                        formControlName="Motivo"
+                        formControlName="motivo"
                       
-                      name="Motivo"
+                      name="motivo"
                       value="TRANSACCION"
                       type="radio"
                       
@@ -93,9 +92,9 @@
 
             
               <div class="form-group text-left">
-                <label for="SistemaOrigen">SistemaOrigen</label>
+                <label for="sistemaOrigen">sistemaOrigen</label>
                 
-                  <input formControlName="SistemaOrigen" type="text" class="form-control">
+                  <input formControlName="sistemaOrigen" type="text" class="form-control">
                 
               </div>
             
@@ -103,9 +102,9 @@
 
             
               <div class="form-group text-left">
-                <label for="ProductoOrigen">ProductoOrigen</label>
+                <label for="productoOrigen">productoOrigen</label>
                 
-                  <input formControlName="ProductoOrigen" type="text" class="form-control">
+                  <input formControlName="productoOrigen" type="text" class="form-control">
                 
               </div>
             
@@ -143,27 +142,27 @@
 
           
             <div class="form-group text-left">
-              <label for="Billetera">Billetera</label>
+              <label for="billetera">billetera</label>
 
               
                 
-                  <textarea [ngModel]="Billetera" formControlName="Billetera" class="form-control" rows="3"></textarea>
+                  <textarea [ngModel]="billetera" formControlName="billetera" class="form-control" rows="3"></textarea>
                 
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="Valor">Valor</label>
+              <label for="valor">valor</label>
 
               
-                <input [ngModel]="Valor" formControlName="Valor" type="number" class="form-control">
+                <input [ngModel]="valor" formControlName="valor" type="number" class="form-control">
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="Motivo">Motivo</label>
+              <label for="motivo">motivo</label>
 
               
                 
@@ -173,10 +172,10 @@
                       <label>
                         <input
                           
-                            formControlName="Motivo"
-                            [ngModel]="Motivo"
+                            formControlName="motivo"
+                            [ngModel]="motivo"
                           
-                          name="Motivo"
+                          name="motivo"
                           value="INICIALIZACION"
                           type="radio"
                           
@@ -187,10 +186,10 @@
                       <label>
                         <input
                           
-                            formControlName="Motivo"
-                            [ngModel]="Motivo"
+                            formControlName="motivo"
+                            [ngModel]="motivo"
                           
-                          name="Motivo"
+                          name="motivo"
                           value="REVERSO"
                           type="radio"
                           
@@ -201,10 +200,10 @@
                       <label>
                         <input
                           
-                            formControlName="Motivo"
-                            [ngModel]="Motivo"
+                            formControlName="motivo"
+                            [ngModel]="motivo"
                           
-                          name="Motivo"
+                          name="motivo"
                           value="TRANSACCION"
                           type="radio"
                           
@@ -220,19 +219,19 @@
             </div>
           
             <div class="form-group text-left">
-              <label for="SistemaOrigen">SistemaOrigen</label>
+              <label for="sistemaOrigen">sistemaOrigen</label>
 
               
-                <input [ngModel]="SistemaOrigen"formControlName="SistemaOrigen" type="text" class="form-control">
+                <input [ngModel]="sistemaOrigen"formControlName="sistemaOrigen" type="text" class="form-control">
               
 
             </div>
           
             <div class="form-group text-left">
-              <label for="ProductoOrigen">ProductoOrigen</label>
+              <label for="productoOrigen">productoOrigen</label>
 
               
-                <input [ngModel]="ProductoOrigen"formControlName="ProductoOrigen" type="text" class="form-control">
+                <input [ngModel]="productoOrigen"formControlName="productoOrigen" type="text" class="form-control">
               
 
             </div>
@@ -276,58 +275,6 @@
 
 
 
-
-
-
-
-
-
-
-<div class="container col-md-6">
-    <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
-        <strong>Error:</strong> {{errorMessage}}
-    </div>
-  
-  <div class="row">
-    <div class="col-md-12">
-        <h1 class="transaction-title" id='transactionName'>AcreditarMillas</h1>
-        <p class="invoke_cancel" id='invoke_cancel'>Invoke</p>
-    </div>
-  </div>
-  <br>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-12">
-          When invoked, this transaction will have the following attributes:
-          <br>
-          <ul>
-            
-
-                <li><span class="attribute"><b>Billetera</b></span></li>
- 
-                <li><span class="attribute"><b>Valor</b></span></li>
-              
-
-                <li><span class="attribute"><b>Motivo</b></span></li>
-              
-              
-                <li><span class="attribute"><b>SistemaOrigen</b></span></li>
-              
-
-                <li><span class="attribute"><b>ProductoOrigen</b></span></li>
-
-          </ul>
-        </div>
-      </div>
-      <button (click)="resetForm();" type="button" class="btn btn-primary" data-toggle="modal" data-target="#addTransactionModal">
-        Invoke</button>
-    </div>
-  </div>
-</div>
-
-
-
 <div class="container">
   <div *ngIf="errorMessage" class="alert alert-danger" role="alert">
       <strong>Error:</strong> {{errorMessage}}
@@ -350,35 +297,44 @@
     </div>
 </div>
 <br>
-
 <div class="row">
     <div class="col-md-12">
-      <table class="table table-responsive">
-        <thead class="thead">
+      <table class="table-users">
           <tr class="thead-cols">
 
-            <th class="info">Estado De Activo</th>
+            <th class="info">billetera</th>
 
-            <th class="info">Activo</th>
+            <th class="info">valor</th>
 
-            <th class="info">Fecha</th>
+            <th class="info">motivo</th>
+            
+            <th class="info">Sistema de Origen</th>
+
+            <th class="info">Producto de Origen</th>
+
+            <th class="info">Transaction ID</th>
+
+            <th class="info">Timestamp</th>
+
 
             <!-- <th class="info-actions">Actions</th> -->
           </tr>
-        </thead>
-        <tbody>
           <tr *ngFor="let asset of allTransactions">
 
 
-            <td class="asset-properties">{{asset.estadoDeActivo}}</td>
+            <td class="asset-properties">{{asset.billetera}}</td>
 
-            <td class="asset-properties">{{asset.Activo}}</td>
+            <td class="asset-properties">{{asset.valor}}</td>            
 
-            
+            <td class="asset-properties">{{asset.motivo}}</td>
+
+            <td class="asset-properties">{{asset.sistemaOrigen}}</td>
+
+            <td class="asset-properties">{{asset.productoOrigen}}</td>
+
+            <td class="asset-properties">{{asset.transactionId}}</td>
 
             <td class="asset-properties">{{asset.timestamp}}</td>
-
-
 
             <!-- <td>
               <button (click)="getForm(asset.transactionId);" type="button" class="btn btn-update" data-toggle="modal" data-target="#updateTransactionModal">
@@ -408,13 +364,8 @@
 
             </td> -->
           </tr>
-        </tbody>
       </table>
     </div>
   </div>
 </div>
 
-
-
-</html>
- 

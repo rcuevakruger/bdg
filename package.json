@@ -3,7 +3,7 @@
     "composer": "^0.20.0"
   },
   "name": "manejo-millas",
-  "version": "0.2.6-deploy.5",
+  "version": "0.0.2",
   "description": "Ejemplo de Manejo de Millas",
   "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimage.svg",
   "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimageanimated.svg",
